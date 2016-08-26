@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O88-Hl-y28">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AGENCYB_0.TTF">
+            <string>AgencyFB-Bold</string>
+            <string>AgencyFB-Bold</string>
+            <string>AgencyFB-Bold</string>
+            <string>AgencyFB-Bold</string>
+            <string>AgencyFB-Bold</string>
+            <string>AgencyFB-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Currency Convertor-->
+        <scene sceneID="8Kw-XN-h8H">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="es2-v4-06S" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wh6-tV-3ZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGN-WS-34x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qFM-1t-O5p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nc0-q3-TFH">
+                                <rect key="frame" x="20" y="175" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="PEH-RS-abP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es2-v4-06S" id="SUV-Jf-Gbv"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EdZ-kJ-Ixo">
+                                <rect key="frame" x="203" y="175" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="kTR-Jf-KUa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es2-v4-06S" id="5Kj-pc-oY5"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SzX-kM-uk7">
+                                <rect key="frame" x="20" y="272" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="dNA-fb-hfB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es2-v4-06S" id="1ad-GP-kgt"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAV-Cy-IDW">
+                                <rect key="frame" x="20" y="363" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="qLL-bh-Let"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="es2-v4-06S" id="W6V-AH-n9u"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GE-E9-NiI">
+                                <rect key="frame" x="125" y="177" width="70" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ktz-TV-9sn"/>
+                                    <constraint firstAttribute="height" constant="26" id="rDB-l7-EXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-Bd-c9q">
+                                <rect key="frame" x="152" y="312" width="8" height="42"/>
+                                <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COe-QK-89G">
+                                <rect key="frame" x="161" y="312" width="8" height="42"/>
+                                <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7x-I4-q0A">
+                                <rect key="frame" x="119" y="412" width="82" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="CGi-dN-xys"/>
+                                    <constraint firstAttribute="width" constant="82" id="H8j-4P-4d0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AgencyFB-Bold" family="Agency FB" pointSize="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleColor" red="0.18621293459999999" green="0.2409864424" blue="0.76001806149999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickOnConvert:" destination="es2-v4-06S" eventType="touchUpInside" id="JnB-E0-7KO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nc0-q3-TFH" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="-94" id="0HG-JX-x1X"/>
+                            <constraint firstItem="COe-QK-89G" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" constant="5" id="5Yv-kE-JEV"/>
+                            <constraint firstItem="nc0-q3-TFH" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" constant="-92" id="AFx-5m-MTj"/>
+                            <constraint firstItem="COe-QK-89G" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="49" id="EXx-hj-EMu"/>
+                            <constraint firstItem="7GE-E9-NiI" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" id="ErK-gG-zCR"/>
+                            <constraint firstItem="SzX-kM-uk7" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="3" id="Exd-ER-QaD"/>
+                            <constraint firstItem="bAV-Cy-IDW" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" id="HEl-p1-1zr"/>
+                            <constraint firstItem="j7x-I4-q0A" firstAttribute="top" secondItem="bAV-Cy-IDW" secondAttribute="bottom" constant="19" id="MAK-Pz-joU"/>
+                            <constraint firstAttribute="trailing" secondItem="j7x-I4-q0A" secondAttribute="trailing" constant="119" id="NbQ-dO-f8I"/>
+                            <constraint firstItem="SzX-kM-uk7" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" id="Q7z-lz-dAS"/>
+                            <constraint firstItem="j7x-I4-q0A" firstAttribute="leading" secondItem="qFM-1t-O5p" secondAttribute="leading" constant="119" id="ZKD-nq-ZXu"/>
+                            <constraint firstItem="EdZ-kJ-Ixo" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" constant="92" id="c2n-Pg-DMy"/>
+                            <constraint firstItem="bAV-Cy-IDW" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="94" id="clE-8N-dnh"/>
+                            <constraint firstItem="EdZ-kJ-Ixo" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="-94" id="efj-uL-kGc"/>
+                            <constraint firstItem="AiE-Bd-c9q" firstAttribute="centerX" secondItem="qFM-1t-O5p" secondAttribute="centerX" constant="-4" id="kDy-5O-tV3"/>
+                            <constraint firstItem="7GE-E9-NiI" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="-94" id="maL-ch-S4k"/>
+                            <constraint firstItem="AiE-Bd-c9q" firstAttribute="centerY" secondItem="qFM-1t-O5p" secondAttribute="centerY" constant="49" id="wPk-y5-jnl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Currency Convertor" id="PZo-2k-QFW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="fromCountry" destination="nc0-q3-TFH" id="kJd-l7-ZZ7"/>
+                        <outlet property="fromValue" destination="SzX-kM-uk7" id="UxC-FM-q7c"/>
+                        <outlet property="toCountry" destination="EdZ-kJ-Ixo" id="SAz-a2-uVw"/>
+                        <outlet property="toValue" destination="bAV-Cy-IDW" id="fAx-Wr-ECQ"/>
+                        <segue destination="9wU-Sw-hGw" kind="show" identifier="getCountry" id="pXt-5h-fJk">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3o-Sy-bBu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="335"/>
+        </scene>
+        <!--Choose Country-->
+        <scene sceneID="H72-4m-bLi">
+            <objects>
+                <viewController storyboardIdentifier="CountryView" id="9wU-Sw-hGw" customClass="CountryView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jvb-yl-SXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="fBs-z3-wcY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gCs-Kv-N0I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFO-Wu-gf5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9wU-Sw-hGw" id="Ncx-5z-hh1"/>
+                                    <outlet property="delegate" destination="9wU-Sw-hGw" id="B2y-jQ-MvB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fBs-z3-wcY" firstAttribute="top" secondItem="uFO-Wu-gf5" secondAttribute="bottom" id="B4Z-5i-Oeg"/>
+                            <constraint firstItem="uFO-Wu-gf5" firstAttribute="top" secondItem="Jvb-yl-SXs" secondAttribute="bottom" constant="-64" id="CUn-e4-kwB"/>
+                            <constraint firstItem="uFO-Wu-gf5" firstAttribute="leading" secondItem="gCs-Kv-N0I" secondAttribute="leading" id="V4k-8I-E5k"/>
+                            <constraint firstAttribute="trailing" secondItem="uFO-Wu-gf5" secondAttribute="trailing" id="r9q-w2-h4D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Country" id="gUl-ZQ-vdp"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countryTbl" destination="uFO-Wu-gf5" id="rtp-QM-aSG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lz-em-igr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531" y="335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="emd-s2-uBs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O88-Hl-y28" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qdp-xX-HbG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.18621293459999999" green="0.2409864424" blue="0.76001806149999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="es2-v4-06S" kind="relationship" relationship="rootViewController" id="tAj-3I-zIT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVl-uC-kmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="335"/>
+        </scene>
+    </scenes>
+</document>
